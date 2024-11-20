@@ -37,8 +37,6 @@ def quick_sort(arr, low, high):
         # Рекурсивно сортируем элементы слева и справа от опорного элемента
         quick_sort(arr, low, pivot_index - 1)
         quick_sort(arr, pivot_index + 1, high)
-
-
 def partition(arr, low, high):
     pivot = arr[low]  # Опорный элемент — первый элемент подмассива
     i = low + 1  # Начинаем с элемента сразу после pivot
